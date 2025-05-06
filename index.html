@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritam Debnath | SEO Specialist & Digital Marketing Expert</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #0f172a;
+            --accent: #38bdf8;
+            --light: #f8fafc;
+            --dark: #0f172a;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #1e293b;
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #38bdf8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #2563eb, #38bdf8);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+            z-index: 1;
+        }
+        
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 12px;
+            width: 2px;
+            height: calc(100% + 18px);
+            background: #cbd5e1;
+        }
+        
+        .timeline-item:last-child:after {
+            display: none;
+        }
+        
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .skill-item {
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .progress-bar {
+            height: 6px;
+            transition: width 1.5s ease-in-out;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .contact-icon {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .contact-icon:hover {
+            transform: scale(1.2);
+            color: var(--primary);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease forwards;
+            opacity: 0;
+        }
+        
+        .animate-delay-100 { animation-delay: 0.1s; }
+        .animate-delay-200 { animation-delay: 0.2s; }
+        .animate-delay-300 { animation-delay: 0.3s; }
+        .animate-delay-400 { animation-delay: 0.4s; }
+        .animate-delay-500 { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-bg text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 animate-fadeIn">
+                <img src="https://media.licdn.com/dms/image/v2/C4E03AQHKB0p5hlPiSg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1610099498543?e=1752105600&v=beta&t=nUV93f932EVAukpJDnpBh6yqhWaDcsc2C1Qg3JMiti4" 
+                     alt="Ritam Debnath" 
+                     class="rounded-full w-48 h-48 mx-auto md:mx-0 object-cover border-4 border-white">
+            </div>
+            <div class="md:w-1/2 md:pl-8 animate-fadeIn animate-delay-200">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Ritam Debnath</h1>
+                <h2 class="text-xl md:text-2xl mb-6">SEO Executive | Digital Marketing Specialist</h2>
+                <p class="text-lg mb-8 text-blue-100">
+                    Specializing in On-Page & Off-Page SEO, Technical SEO, Keyword Research, Link Building, and Content Optimization.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/ritam-debnath-179330203" target="_blank" class="bg-white text-blue-800 px-4 py-2 rounded-full font-medium hover:bg-blue-100 transition duration-300">
+                        <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white px-4 py-2 rounded-full font-medium hover:bg-white hover:text-blue-800 transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold section-title animate-fadeIn">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="md:col-span-8 animate-fadeIn animate-delay-200">
+                    <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                        As a results-driven SEO Executive with 2.5 years of experience, I specialize in improving website rankings, 
+                        increasing organic traffic, and optimizing digital presence. My expertise spans On-Page SEO, Off-Page SEO, 
+                        Technical SEO, Keyword Research, Link Building, and Content Optimization.
+                    </p>
+                    <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                        I stay updated with Google Algorithm Updates, Core Web Vitals, and AI-driven SEO trends to ensure that 
+                        websites remain competitive. My experience includes conducting in-depth keyword research, implementing 
+                        On-Page SEO strategies, building high-quality backlinks, optimizing technical SEO elements, managing local SEO, 
+                        enhancing user experience, and performing comprehensive SEO audits.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I am proficient in Google Analytics, Google Search Console, Ahrefs, SEMrush, Screaming Frog, Moz, 
+                        and WordPress SEO plugins. My goal is to help businesses scale their organic presence and achieve sustainable growth.
+                    </p>
+                </div>
+                <div class="md:col-span-4 animate-fadeIn animate-delay-300">
+                    <div class="bg-blue-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">Professional Highlights</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>2.5+ years of SEO expertise</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Comprehensive SEO strategy development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Expertise in technical, on-page & off-page SEO</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Data-driven approach to SEO</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Advanced SEO tool proficiency</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                                <span>Proven track record of ranking improvements</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold section-title animate-fadeIn">Professional Experience</h2>
+            <div class="timeline mt-12">
+                <!-- Current Job -->
+                <div class="timeline-item animate-fadeIn">
+                    <div class="mb-2">
+                        <span class="text-sm font-medium text-blue-600">Jan 2025 - Present</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Search Engine Optimization Executive</h3>
+                    <h4 class="text-lg font-medium text-gray-700 mb-2">Carney Technologies Services, Kolkata</h4>
+                    <p class="text-gray-600 mb-4">
+                        As an SEO Executive, I manage and execute comprehensive SEO strategies to improve website rankings, 
+                        enhance organic visibility, and drive sustainable traffic growth.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-blue-800 mb-2">Key Responsibilities:</h5>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Implementing On-Page SEO strategies including meta tags, header optimization, and content enhancements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Building high-quality backlinks through white-hat Off-Page SEO techniques</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Optimizing technical SEO elements including sitemaps, robots.txt, and site speed</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Conducting SEO audits and implementing improvements based on findings</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Analyzing and reporting on SEO performance and KPIs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Intlum Technology -->
+                <div class="timeline-item animate-fadeIn animate-delay-100">
+                    <div class="mb-2">
+                        <span class="text-sm font-medium text-blue-600">May 2024 - Jan 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Digital Marketing Executive</h3>
+                    <h4 class="text-lg font-medium text-gray-700 mb-2">Intlum Technology Private Limited, Kolkata</h4>
+                    <p class="text-gray-600 mb-4">
+                        Specialized in SEO strategies to improve website rankings, increase organic traffic, and optimize online visibility.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-blue-800 mb-2">Achievements:</h5>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Improved organic traffic by 45% through strategic keyword optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Enhanced website Core Web Vitals scores resulting in better user engagement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Developed and implemented technical SEO strategies that improved site indexation by 30%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- THATWARE -->
+                <div class="timeline-item animate-fadeIn animate-delay-200">
+                    <div class="mb-2">
+                        <span class="text-sm font-medium text-blue-600">Mar 2024 - May 2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Search Engine Optimization Executive</h3>
+                    <h4 class="text-lg font-medium text-gray-700 mb-2">THATWARE®, Bally</h4>
+                    <p class="text-gray-600 mb-4">
+                        Responsible for improving website visibility, optimizing content for search engines, and implementing effective SEO strategies.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-blue-800 mb-2">Key Responsibilities:</h5>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Conducted keyword research and optimized content for search intent</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Developed backlink-building strategies through guest posting and outreach</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Performed technical SEO audits and implemented improvements</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Freelance -->
+                <div class="timeline-item animate-fadeIn animate-delay-300">
+                    <div class="mb-2">
+                        <span class="text-sm font-medium text-blue-600">Mar 2023 - Feb 2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Freelance Off-Page SEO Specialist</h3>
+                    <h4 class="text-lg font-medium text-gray-700 mb-2">Self Employed, Kolkata</h4>
+                    <p class="text-gray-600 mb-4">
+                        Focused on building high-quality backlinks, improving domain authority, and increasing organic rankings through ethical SEO strategies.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-blue-800 mb-2">Key Services:</h5>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Link building & outreach campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Content promotion & digital PR</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>Local SEO & citation building</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-angle-right text-blue-600 mt-1 mr-2"></i>
+                                <span>SEO performance analysis & reporting</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Previous Jobs - Summarized -->
+                <div class="timeline-item animate-fadeIn animate-delay-400">
+                    <div class="mb-2">
+                        <span class="text-sm font-medium text-blue-600">2019 - 2022</span>
+                    </div>
+                    <h3 class="text-xl font-bold">Earlier Career</h3>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <ul class="space-y-4 text-gray-600">
+                            <li>
+                                <div class="font-medium text-gray-800">Service Engineer at Jeeves</div>
+                                <div class="text-sm text-gray-600">Oct 2021 - Nov 2022</div>
+                                <p class="mt-1">Inspected and repaired returned electronic products from Flipkart, identifying faults and resolving issues.</p>
+                            </li>
+                            <li>
+                                <div class="font-medium text-gray-800">Technical Service Engineer at Oppo Mobile India</div>
+                                <div class="text-sm text-gray-600">Nov 2019 - Nov 2020</div>
+                                <p class="mt-1">Responsible for repairing Oppo mobile phones at the service center.</p>
+                            </li>
+                            <li>
+                                <div class="font-medium text-gray-800">Youtuber</div>
+                                <div class="text-sm text-gray-600">Aug 2020 - Present</div>
+                                <p class="mt-1">Creating and managing content for my YouTube channel.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold section-title animate-fadeIn">SEO Project Portfolio</h2>
+            <p class="text-lg text-gray-700 mb-12 max-w-3xl animate-fadeIn animate-delay-100">
+                I've worked on various websites to improve their search visibility, organic traffic, and overall SEO performance. 
+                Here are some of the projects I've successfully optimized:
+            </p>
+            
+            <!-- Project Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden animate-fadeIn animate-delay-200">
+                    <div class="relative h-48 bg-blue-100 flex items-center justify-center">
+                        <div class="text-2xl font-bold text-blue-800">Cure By Design</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">CureByDesign.in</h3>
+                        <p class="text-gray-600 mb-4">
+                            A CBD wellness company website offering health and wellness products.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">SEO Focus:</span>
+                                <span class="text-sm text-gray-600">On-Page SEO, Product Schema, Local SEO</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">Results:</span>
+                                <span class="text-sm text-gray-600">40% increase in organic traffic, 25+ keywords ranking on page 1</span>
+                            </div>
+                        </div>
+                        <a href="https://curebydesign.in/" target="_blank" 
+                           class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden animate-fadeIn animate-delay-300">
+                    <div class="relative h-48 bg-green-100 flex items-center justify-center">
+                        <div class="text-2xl font-bold text-green-800">Lobatio</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lobatio.com</h3>
+                        <p class="text-gray-600 mb-4">
+                            A gardening service company in Hong Kong offering landscape design and plant maintenance.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">SEO Focus:</span>
+                                <span class="text-sm text-gray-600">International SEO, Content Optimization, Local Business Schema</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">Results:</span>
+                                <span class="text-sm text-gray-600">65% growth in organic visibility, Top 3 rankings for key service terms</span>
+                            </div>
+                        </div>
+                        <a href="https://lobatio.com/" target="_blank" 
+                           class="inline-block mt-4 px-4 py-2 bg-green-600 text-white rounded-full text-sm font-medium hover:bg-green-700 transition duration-300">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden animate-fadeIn animate-delay-400">
+                    <div class="relative h-48 bg-purple-100 flex items-center justify-center">
+                        <div class="text-2xl font-bold text-purple-800">Ariddl</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ariddl.com</h3>
+                        <p class="text-gray-600 mb-4">
+                            A website hosting provider focusing on reliability, security, and scalability.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">SEO Focus:</span>
+                                <span class="text-sm text-gray-600">Technical SEO, Core Web Vitals, Keyword Optimization</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">Results:</span>
+                                <span class="text-sm text-gray-600">80% improvement in page load speed, 50% increase in conversions</span>
+                            </div>
+                        </div>
+                        <a href="https://ariddl.com/" target="_blank" 
+                           class="inline-block mt-4 px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-medium hover:bg-purple-700 transition duration-300">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden animate-fadeIn animate-delay-200">
+                    <div class="relative h-48 bg-yellow-100 flex items-center justify-center">
+                        <div class="text-2xl font-bold text-yellow-800">Gullah Heritage</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">GullaHeritage.com</h3>
+                        <p class="text-gray-600 mb-4">
+                            Cultural heritage tourism website for Hilton Head Island showcasing Gullah culture.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">SEO Focus:</span>
+                                <span class="text-sm text-gray-600">Local SEO, Tourism Keywords, Content Strategy</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">Results:</span>
+                                <span class="text-sm text-gray-600">120% increase in organic traffic, Top rankings for local tourism terms</span>
+                            </div>
+                        </div>
+                        <a href="https://gullaheritage.com/" target="_blank" 
+                           class="inline-block mt-4 px-4 py-2 bg-yellow-600 text-white rounded-full text-sm font-medium hover:bg-yellow-700 transition duration-300">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden animate-fadeIn animate-delay-300">
+                    <div class="relative h-48 bg-red-100 flex items-center justify-center">
+                        <div class="text-2xl font-bold text-red-800">Physio Biswanath</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">PhysioBiswanath.in</h3>
+                        <p class="text-gray-600 mb-4">
+                            Professional physiotherapy service website in Naihati with 25+ years of experience.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">SEO Focus:</span>
+                                <span class="text-sm text-gray-600">Local Healthcare SEO, Schema Markup, Google Business Profile</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-sm font-medium mr-2 w-24">Results:</span>
+                                <span class="text-sm text-gray-600">90% increase in appointment bookings, Featured snippets for key services</span>
+                            </div>
+                        </div>
+                        <a href="https://www.physiobiswanath.in/" target="_blank" 
+                           class="inline-block mt-4 px-4 py-2 bg-red-600 text-white rounded-full text-sm font-medium hover:bg-red-700 transition duration-300">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project Overview -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg shadow-lg overflow-hidden animate-fadeIn animate-delay-400">
+                    <div class="p-6 h-full flex flex-col justify-center">
+                        <h3 class="text-xl font-bold mb-4 text-blue-800">SEO Project Highlights</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-line text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Achieved 40-120% organic traffic growth across projects</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-search text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Improved keyword rankings with focused content strategies</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-bolt text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Enhanced Core Web Vitals scores by 40-80%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Optimized local SEO for higher regional visibility</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-link text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Built high-quality backlink profiles for domain authority</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold section-title animate-fadeIn">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- SEO Skills -->
+                <div class="animate-fadeIn animate-delay-100">
+                    <h3 class="text-xl font-bold mb-6 text-blue-800">SEO Expertise</h3>
+                    <div class="space-y-5">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">On-Page SEO</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Off-Page SEO</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Technical SEO</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Keyword Research</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Link Building</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Local SEO</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="animate-fadeIn animate-delay-200">
+                    <h3 class="text-xl font-bold mb-6 text-blue-800">Tools & Technologies</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-item bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-chart-line text-blue-600 text-xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Google Analytics</h4>
+                                    <div class="w-full bg-gray-200 rounded-full h-1.5 mt-2">
+                                        <div class="bg-blue-600 h-1.5 rounded-full progress-bar" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-search text-blue-600 text-xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Google Search Console</h4>
+                                    <div class="w-full bg-gray-200 rounded-full h-1.5 mt-2">
+                                        <div class="bg-blue-600 h-1.5 rounded-full progress-bar" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-link text-blue-600 text-xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Ahrefs</h4>
+                                    <div class="w-full bg-gray-200 rounded-full h-1.5 mt-2">
+                                        <div class="bg-blue-600 h-1.5 rounded-full progress-bar" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-tasks text-blue-600 text-xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">SEMrush</h4>
+                                    <div class="w-full bg-gray-200 rounded-full h-1.5 mt-2">
+                                        <div class="bg-blue-600 h-1.5 rounded-full progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-spider text-blue-600 text-xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">Screaming Frog</h4>
+                                    <div class="w-full bg-gray-200 rounded-full h-1.5 mt-2">
+                                        <div class="bg-blue-600 h-1.5 rounded-full progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fab fa-wordpress text-blue-600 text-xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">WordPress SEO</h4>
+                                    <div class="w-full bg-gray-200 rounded-full h-1.5 mt-2">
+                                        <div class="bg-blue-600 h-1.5 rounded-full progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Skills -->
+            <div class="mt-12 animate-fadeIn animate-delay-300">
+                <h3 class="text-xl font-bold mb-6 text-blue-800">Additional Skills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white rounded-lg p-4 text-center shadow-sm skill-item">
+                        <i class="fas fa-file-alt text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-medium">Content Optimization</h4>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center shadow-sm skill-item">
+                        <i class="fas fa-code text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-medium">HTML/CSS Basics</h4>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center shadow-sm skill-item">
+                        <i class="fas fa-mobile-alt text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-medium">Mobile Optimization</h4>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center shadow-sm skill-item">
+                        <i class="fas fa-tachometer-alt text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-medium">Page Speed Optimization</h4>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center shadow-sm skill-item">
+                        <i class="fas fa-chart-pie text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-medium">Data Analysis</h4>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center shadow-sm skill-item">
+                        <i class="fas fa-bullhorn text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-medium">Digital Marketing</h4>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center shadow-sm skill-item">
+                        <i class="fas fa-users text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-medium">Client Communication</h4>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 text-center shadow-sm skill-item">
+                        <i class="fas fa-laptop-code text-blue-600 text-2xl mb-2"></i>
+                        <h4 class="font-medium">SEO Auditing</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold section-title animate-fadeIn">Education & Qualifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Education 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600 animate-fadeIn animate-delay-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Diploma in Digital Marketing</h3>
+                            <p class="text-gray-600">Seven Boats Academy</p>
+                        </div>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-sm text-gray-500 mb-2">Nov 2023 - Jan 2025</p>
+                        <div class="flex items-center">
+                            <span class="text-sm font-medium mr-2">Grade:</span>
+                            <span class="text-sm text-gray-600">A+</span>
+                        </div>
+                        <p class="mt-4 text-gray-700">
+                            Comprehensive training in all aspects of digital marketing with a focus on SEO, 
+                            content marketing, social media marketing, and digital advertising strategies.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Education 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600 animate-fadeIn animate-delay-200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Diploma in Electrical Engineering</h3>
+                            <p class="text-gray-600">Technique Polytechnic Institute</p>
+                        </div>
+                    </div>
+                    <div class="ml-16">
+                        <p class="text-sm text-gray-500 mb-2">Feb 2016 - Jun 2019</p>
+                        <p class="mt-4 text-gray-700">
+                            Technical education in electrical engineering principles, systems design, 
+                            circuit analysis, and industrial applications. Developed strong problem-solving 
+                            and analytical skills that transfer well to technical SEO.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Certifications & Professional Development -->
+                <div class="md:col-span-2 bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow-md animate-fadeIn animate-delay-300">
+                    <h3 class="text-xl font-bold mb-6 text-blue-800">Professional Development & Continuous Learning</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-certificate text-blue-600 mr-3"></i>
+                                <h4 class="font-medium">Google Analytics Certification</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">
+                                Proficient in tracking, analyzing, and interpreting website data to drive SEO strategy.
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-certificate text-blue-600 mr-3"></i>
+                                <h4 class="font-medium">Technical SEO Mastery</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">
+                                Advanced understanding of site architecture, page speed optimization, and mobile-first indexing.
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-certificate text-blue-600 mr-3"></i>
+                                <h4 class="font-medium">Content Strategy Excellence</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">
+                                Creating SEO-optimized content that satisfies user intent and drives engagement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center animate-fadeIn">Get In Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="animate-fadeIn animate-delay-100">
+                    <h3 class="text-2xl font-semibold mb-6">Let's Discuss Your SEO Strategy</h3>
+                    <p class="mb-8 text-blue-100">
+                        I'm available to help your business improve its online visibility and drive organic growth through proven SEO strategies. 
+                        Whether you need a complete SEO overhaul or targeted optimization, I'm here to help you reach your goals.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-xl contact-icon"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-blue-200">Kolkata, West Bengal, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-xl contact-icon"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-blue-200"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5f2d362b3e32713b3a3d313e2b376d6f6f6f1f38323e3633713c3032">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4">
+                                <i class="fab fa-linkedin-in text-xl contact-icon"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/ritam-debnath-179330203" target="_blank" class="text-blue-200 hover:text-white transition duration-300">
+                                    linkedin.com/in/ritam-debnath-179330203
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg animate-fadeIn animate-delay-200">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-800">Contact Form</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="button" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Ritam Debnath</h2>
+            <p class="mb-6 text-gray-400">SEO Specialist & Digital Marketing Expert</p>
+            
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="https://www.linkedin.com/in/ritam-debnath-179330203" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition duration-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition duration-300">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            
+            <div class="text-gray-500 text-sm">
+                <p>&copy; 2024 Ritam Debnath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Add event listeners for animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate skill bars
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDjRGrG3ve3UlCTnmUJuB3%2B2BI4JFaqZKieRIkKblLMAbZDrpVA5f9UZD1LQ%2BamifnQ%2B0CU7gxHaQTFqidxfGTWmzR0eiegBSBw5nXcoW3l1a7PzEM%2Bgneajer1sYkxYXq8DLk1JIpwYHh28p24v8Bsp1ez%2FdGvcyMvMrqCwEVRp27cS97B3OgYm9Be6n%2BhlagO6SDJfBDJgLWZooYgmNpMH1ZSWYW%2BhC5DgppbVFczArXRpsZ9Ri2TWIKwghbppcx0S7RmypL9VaPX7tbFiVuBEb4CTH%2Bf8C7hcvCcU8A%2BpFAl6J%2BhKfRwdzcbxZ5o2aiLDpd09GhYvtKQ3Y1n4WCJcNgrGR%2F1dYQJG3%2FxIKWdFycCV79IACRyoMtJjnlQBV%2BnfpHFVuoNb7wjXJmxEGF3vHIhFl70WYwscNH9e0mWQtzik9FS5kNUjQFS%2BsI%2BeiGjGsOH4wMdKMDqzxktFmhDB9jVO%2BJfWHLh80P3%2FQJYX61xBnAhNzV%2FMrpiP2tp6LkYkHlluiq9jiVGk9XUIwFcA%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDjRGrG3ve3UlCTnmUJuB3+2BI4JFaqZKieRIkKblLMAbZDrpVA5f9UZD1LQ+amifnQ+0CU7gxHaQTFqidxfGTWmzR0eiegBSBw5nXcoW3l1a7PzEM+gneajer1sYkxYXq8DLk1JIpwYHh28p24v8Bsp1ez/dGvcyMvMrqCwEVRp27cS97B3OgYm9Be6n+hlagO6SDJfBDJgLWZooYgmNpMH1ZSWYW+hC5DgppbVFczArXRpsZ9Ri2TWIKwghbppcx0S7RmypL9VaPX7tbFiVuBEb4CTH+f8C7hcvCcU8A+pFAl6J+hKfRwdzcbxZ5o2aiLDpd09GhYvtKQ3Y1n4WCJcNgrGR/1dYQJG3/xIKWdFycCV79IACRyoMtJjnlQBV+nfpHFVuoNb7wjXJmxEGF3vHIhFl70WYwscNH9e0mWQtzik9FS5kNUjQFS+sI+eiGjGsOH4wMdKMDqzxktFmhDB9jVO+JfWHLh80P3/QJYX61xBnAhNzV/MrpiP2tp6LkYkHlluiq9jiVGk9XUIwFcA=";
+    </script>
+    
+        <script id="html_badge_script2" src="https://www.genspark.ai/html_badge.js"></script>
+        
