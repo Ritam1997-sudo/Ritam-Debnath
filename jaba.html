@@ -168,7 +168,43 @@
                                   class="form-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none" 
                                   placeholder="Enter all relevant medical notes, observations, and recommendations"></textarea>
                     </div>
+                    <div class="md:col-span-2">
+  <button type="submit"
+    class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 focus:outline-none">
+    Save Patient Data
+  </button>
+</div>
+
                 </form>
+                <script>
+  document.getElementById("patientForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const data = {
+      name: document.getElementById("patientName").value,
+      age: document.getElementById("patientAge").value,
+      gender: document.getElementById("patientGender").value,
+      contact: document.getElementById("patientContact").value,
+      address: document.getElementById("patientAddress").value,
+      notes: document.getElementById("doctorNotes").value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbzqawOvIEsfXACrCVLunm6H-NMArdvRvsw1ijZo9dsbhbB5E10fRkztGDgGgg6fh4S0/exec", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    .then(res => res.text())
+    .then(msg => {
+      alert("✅ Patient data saved!");
+      document.getElementById("patientForm").reset();
+    })
+    .catch(err => alert("❌ Error: " + err));
+  });
+</script>
+
                 
                 <div class="flex flex-wrap gap-4 mt-6">
                     <button onclick="generatePrescription()" 
@@ -374,6 +410,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script>
+        
         // Global variables
         let currentPatientId = '';
         let patientCounter = 1;
