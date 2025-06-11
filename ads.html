@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritam Debnath - Professional CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+        }
+        
+        .cv-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 15mm;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .cv-container {
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                padding: 15mm;
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+        }
+        
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 4px;
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #6b7280;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 12px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .contact-item i {
+            width: 14px;
+            color: #2563eb;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e40af;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary {
+            font-size: 13px;
+            text-align: justify;
+            line-height: 1.5;
+            color: #4b5563;
+        }
+        
+        .experience-item {
+            margin-bottom: 14px;
+            page-break-inside: avoid;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4px;
+        }
+        
+        .job-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .company {
+            font-size: 13px;
+            color: #2563eb;
+            font-weight: 500;
+        }
+        
+        .duration {
+            font-size: 11px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        
+        .job-description {
+            font-size: 11px;
+            color: #4b5563;
+            margin-top: 4px;
+        }
+        
+        .job-description ul {
+            margin-left: 12px;
+            margin-top: 3px;
+        }
+        
+        .job-description li {
+            margin-bottom: 2px;
+        }
+        
+        .education-item {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .degree {
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .school {
+            font-size: 11px;
+            color: #6b7280;
+        }
+        
+        .year {
+            font-size: 11px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        
+        .skill-category {
+            margin-bottom: 8px;
+        }
+        
+        .skill-category-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 4px;
+        }
+        
+        .skill-list {
+            font-size: 11px;
+            color: #4b5563;
+            line-height: 1.4;
+        }
+        
+        .certification-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+        
+        .cert-name {
+            font-weight: 500;
+        }
+        
+        .cert-authority {
+            color: #6b7280;
+            font-size: 11px;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">RITAM DEBNATH</div>
+            <div class="title">SEO Executive | Digital Marketing Specialist | Google Ads & Meta Ads Expert</div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 9038303107</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>ritam.debnath746@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/ritam-debnath-179330203</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>DOB: 30/10/1997</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="summary">
+                Results-driven SEO Executive and Digital Marketing Specialist with 2.5+ years of experience in improving website rankings, increasing organic traffic, and managing PPC campaigns. Expertise in SEO (On-Page, Off-Page, Technical), Google Ads, Meta Ads, Facebook advertising, and social media marketing. Proven track record in keyword research, link building, content optimization, and paid advertising campaigns. Proficient in Google Analytics, Search Console, Ahrefs, SEMrush, and major advertising platforms.
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <!-- Work Experience -->
+                <div class="section">
+                    <div class="section-title">Work Experience</div>
+                    
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">SEO Executive</div>
+                                <div class="company">Carney Technologies Services</div>
+                            </div>
+                            <div class="duration">Jan 2025 - Present</div>
+                        </div>
+                        <div class="job-description">
+                            Managing comprehensive SEO strategies including On-Page, Off-Page, and Technical SEO. Conducting SEO audits, keyword research, and link building campaigns to improve organic rankings and traffic.
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Digital Marketing Executive</div>
+                                <div class="company">Intlum Technology Pvt Ltd</div>
+                            </div>
+                            <div class="duration">May 2024 - Jan 2025</div>
+                        </div>
+                        <div class="job-description">
+                            <ul>
+                                <li>Managed Google Ads campaigns (Search, Display, Shopping) with budget optimization</li>
+                                <li>Created and optimized Meta Ads (Facebook & Instagram advertising campaigns)</li>
+                                <li>Implemented comprehensive SEO strategies (On-Page, Off-Page, Technical)</li>
+                                <li>Executed social media marketing campaigns across multiple platforms</li>
+                                <li>Performed PPC campaign analysis and conversion rate optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">SEO Executive</div>
+                                <div class="company">THATWARE LLP</div>
+                            </div>
+                            <div class="duration">Mar 2024 - May 2024</div>
+                        </div>
+                        <div class="job-description">
+                            Focused on On-Page SEO, Off-Page SEO, and Technical SEO implementations. Conducted keyword research, content optimization, and backlink building strategies.
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Freelance Off-Page SEO Specialist</div>
+                                <div class="company">Self-Employed</div>
+                            </div>
+                            <div class="duration">Feb 2023 - Nov 2023</div>
+                        </div>
+                        <div class="job-description">
+                            Specialized in link building, guest posting, and off-page optimization strategies. Managed multiple client projects focusing on domain authority improvement and organic rankings.
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">Content Creator & YouTuber</div>
+                                <div class="company">Self-Employed</div>
+                            </div>
+                            <div class="duration">2020 - Present</div>
+                        </div>
+                        <div class="job-description">
+                            YouTube content creation, blogging, and digital content strategy. Built audience engagement and monetization through content marketing.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="section">
+                    <div class="section-title">Education</div>
+                    
+                    <div class="education-item">
+                        <div>
+                            <div class="degree">Digital Marketing Course</div>
+                            <div class="school">Seven Boats Academy</div>
+                        </div>
+                        <div class="year">2024</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div>
+                            <div class="degree">Diploma in Electrical Engineering</div>
+                            <div class="school">Technique Polytechnic Institute</div>
+                        </div>
+                        <div class="year">2019</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div>
+                            <div class="degree">Higher Secondary (12th)</div>
+                            <div class="school">Halisahar High School</div>
+                        </div>
+                        <div class="year">2015</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div>
+                            <div class="degree">Secondary (10th)</div>
+                            <div class="school">Uttar Garifa Pallimangal High School</div>
+                        </div>
+                        <div class="year">2013</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!-- Skills -->
+                <div class="section">
+                    <div class="section-title">Core Skills</div>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <div class="skill-category-title">SEO Expertise</div>
+                            <div class="skill-list">
+                                • On-Page SEO<br>
+                                • Off-Page SEO<br>
+                                • Technical SEO<br>
+                                • Keyword Research<br>
+                                • Link Building<br>
+                                • Content Optimization<br>
+                                • Local SEO<br>
+                                • SEO Audits
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="skill-category-title">Paid Advertising</div>
+                            <div class="skill-list">
+                                • Google Ads (Search, Display)<br>
+                                • Meta Ads (Facebook & Instagram)<br>
+                                • PPC Campaign Management<br>
+                                • Social Media Advertising<br>
+                                • Campaign Optimization<br>
+                                • Conversion Tracking<br>
+                                • Budget Management<br>
+                                • Ad Copy Creation
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="skill-category-title">SEO Tools</div>
+                            <div class="skill-list">
+                                • Google Analytics<br>
+                                • Google Search Console<br>
+                                • Ahrefs<br>
+                                • SEMrush<br>
+                                • Screaming Frog<br>
+                                • Moz<br>
+                                • WordPress SEO<br>
+                                • Google Keyword Planner
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="skill-category-title">Digital Marketing</div>
+                            <div class="skill-list">
+                                • Social Media Marketing<br>
+                                • Content Marketing<br>
+                                • Email Marketing<br>
+                                • Performance Marketing<br>
+                                • Conversion Rate Optimization<br>
+                                • Digital Strategy<br>
+                                • Analytics & Reporting<br>
+                                • Competitor Analysis
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="section">
+                    <div class="section-title">Certifications</div>
+                    <div class="certification-item">
+                        <div>
+                            <div class="cert-name">On-Page SEO Certificate</div>
+                            <div class="cert-authority">Seven Boats Academy</div>
+                        </div>
+                        <div class="year">2025</div>
+                    </div>
+                    <div class="certification-item">
+                        <div>
+                            <div class="cert-name">Digital Marketing Diploma</div>
+                            <div class="cert-authority">Seven Boats Academy</div>
+                        </div>
+                        <div class="year">2024</div>
+                    </div>
+                </div>
+
+                <!-- Key Achievements -->
+                <div class="section">
+                    <div class="section-title">Key Achievements</div>
+                    <div class="skill-list">
+                        • 2.5+ years of hands-on SEO and digital marketing experience<br>
+                        • Successfully managed Google Ads and Meta Ads campaigns<br>
+                        • Expertise in both organic and paid marketing strategies<br>
+                        • Proven track record in improving website rankings<br>
+                        • Strong background in content creation and YouTube marketing<br>
+                        • Comprehensive knowledge of latest SEO trends and algorithm updates<br>
+                        • Experience with technical SEO and Core Web Vitals optimization
+                    </div>
+                </div>
+
+                <!-- Technical Proficiency -->
+                <div class="section">
+                    <div class="section-title">Platforms & Tools</div>
+                    <div class="skill-list">
+                        <strong>Advertising Platforms:</strong> Google Ads, Facebook Ads Manager, Meta Business Manager, LinkedIn Ads<br><br>
+                        <strong>Analytics:</strong> Google Analytics, Google Search Console, Facebook Analytics, Google Tag Manager<br><br>
+                        <strong>SEO Tools:</strong> Ahrefs, SEMrush, Moz, Screaming Frog, Ubersuggest, Yoast SEO<br><br>
+                        <strong>Content Management:</strong> WordPress, Shopify, HTML/CSS, Schema Markup
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
