@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritam Debnath - Digital Marketing Executive Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Header Section */
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 25px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .job-title {
+            font-size: 18px;
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .contact-info a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info span {
+            margin: 0 8px;
+        }
+        
+        /* Section Styles */
+        section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+        
+        h3 {
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .job-title-role {
+            font-size: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+        
+        .date-range {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .company-name {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        /* Professional Summary */
+        .summary-text {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #444;
+            text-align: justify;
+        }
+        
+        /* Lists */
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        li {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 6px;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px 20px;
+            margin-top: 10px;
+        }
+        
+        .skill-item {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .skill-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        /* Education Section */
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .degree {
+            font-size: 15px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .institution {
+            font-size: 14px;
+            color: #666;
+            margin-top: 3px;
+        }
+        
+        /* Additional Details */
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px 20px;
+            font-size: 14px;
+            color: #444;
+        }
+        
+        .detail-item {
+            display: flex;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            min-width: 140px;
+            color: #2c3e50;
+        }
+        
+        .detail-value {
+            color: #444;
+        }
+        
+        /* Languages Section */
+        .languages-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: #444;
+        }
+        
+        .language-item {
+            flex: 0 0 auto;
+        }
+        
+        .language-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+            }
+            
+            .resume-container {
+                max-width: 100%;
+                padding: 20px;
+                box-shadow: none;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 18px;
+                page-break-after: avoid;
+            }
+            
+            h3 {
+                page-break-after: avoid;
+            }
+            
+            section {
+                page-break-inside: avoid;
+            }
+            
+            .job-header {
+                page-break-inside: avoid;
+            }
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .resume-container {
+                padding: 30px 25px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            .skills-grid,
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .date-range {
+                margin-top: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header>
+            <h1>Ritam Debnath</h1>
+            <div class="job-title">Digital Marketing Executive</div>
+            <div class="contact-info">
+                Naihati, West Bengal, India<span>|</span>
+                <a href="tel:+919038303107">+91 9038303107</a><span>|</span>
+                <a href="mailto:ritamdebnath746@gmail.com">ritamdebnath746@gmail.com</a><span>|</span>
+                <a href="https://in.linkedin.com/in/ritam-debnath-179330203" target="_blank">LinkedIn Profile</a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                Results-driven Digital Marketing Executive with 3+ years of experience in SEO and performance-focused digital strategies. Strong expertise in on-page SEO, keyword research, technical SEO basics, content optimization, and website performance analysis. Hands-on experience with Google Search Console, Google Analytics (GA4), and SEO audit tools to improve organic visibility and search rankings. Skilled in analyzing data, identifying growth opportunities, and implementing SEO best practices aligned with search engine guidelines. Adept at working with content and development teams to deliver measurable results and drive sustainable organic traffic growth.
+            </p>
+        </section>
+
+        <!-- Work Experience -->
+        <section>
+            <h2>Work Experience</h2>
+            
+            <div class="job-header">
+                <div>
+                    <h3>Digital Marketing Executive</h3>
+                    <div class="company-name">[Please add company name from your LinkedIn profile]</div>
+                </div>
+                <div class="date-range">[Start Date] – [End Date / Present]</div>
+            </div>
+            <ul>
+                <li>Performed on-page SEO optimization including title tags, meta descriptions, header tags, and internal linking strategies to improve search engine rankings</li>
+                <li>Conducted comprehensive keyword research and search intent analysis to identify high-value opportunities and align content with user needs</li>
+                <li>Monitored and analyzed website performance using Google Search Console and Google Analytics (GA4) to track organic traffic, user behavior, and conversion metrics</li>
+                <li>Executed SEO audits and competitor analysis to identify technical issues, content gaps, and opportunities for improvement</li>
+                <li>Optimized website content for Google SERP visibility, implementing schema markup and structured data for enhanced search features</li>
+                <li>Collaborated with content writers and web development teams to implement SEO best practices and ensure technical SEO compliance</li>
+                <li>Managed technical SEO elements including XML sitemaps, robots.txt, canonical tags, and duplicate content resolution</li>
+                <li>Improved page speed and Core Web Vitals through image optimization, alt tag implementation, and performance recommendations</li>
+                <li>Generated detailed SEO reports and performance tracking dashboards to measure ROI and communicate results to stakeholders</li>
+                <li>Stayed current with Google algorithm updates and search engine guidelines to maintain and improve organic visibility</li>
+            </ul>
+
+            <!-- Add additional work experience entries if available from LinkedIn -->
+            <div class="job-header" style="margin-top: 20px;">
+                <div>
+                    <h3>[Additional Role if applicable]</h3>
+                    <div class="company-name">[Company Name]</div>
+                </div>
+                <div class="date-range">[Start Date] – [End Date]</div>
+            </div>
+            <ul>
+                <li>[Please add details from your LinkedIn profile if you have additional work experience]</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <div class="degree">[Degree Name - e.g., Bachelor of Business Administration / Bachelor of Arts / Bachelor of Science]</div>
+                <div class="institution">[University / College Name]</div>
+                <div class="institution">[Year of Completion - e.g., 2019]</div>
+            </div>
+
+            <!-- Add additional education/certifications from LinkedIn -->
+            <div class="education-item">
+                <div class="degree">[Additional Degree or Certification if applicable]</div>
+                <div class="institution">[Institution Name]</div>
+                <div class="institution">[Year of Completion]</div>
+            </div>
+        </section>
+
+        <!-- Core Competencies & Skills -->
+        <section>
+            <h2>Core Competencies & Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-item">On-Page SEO Optimization</div>
+                <div class="skill-item">Keyword Research & Analysis</div>
+                <div class="skill-item">Technical SEO Implementation</div>
+                <div class="skill-item">Search Intent Analysis</div>
+                <div class="skill-item">Content Optimization for SERP</div>
+                <div class="skill-item">Google Search Console</div>
+                <div class="skill-item">Google Analytics (GA4)</div>
+                <div class="skill-item">SEO Audit & Competitor Analysis</div>
+                <div class="skill-item">Internal Linking Strategy</div>
+                <div class="skill-item">Site Structure Optimization</div>
+                <div class="skill-item">Page Speed & Core Web Vitals</div>
+                <div class="skill-item">Image & Alt Tag Optimization</div>
+                <div class="skill-item">Canonical Tags & Duplicate Content</div>
+                <div class="skill-item">XML Sitemaps & Robots.txt</div>
+                <div class="skill-item">Local SEO & Google Business Profile</div>
+                <div class="skill-item">Backlink Analysis</div>
+                <div class="skill-item">Google Keyword Planner</div>
+                <div class="skill-item">Ahrefs / SEMrush / Ubersuggest</div>
+                <div class="skill-item">Screaming Frog SEO Spider</div>
+                <div class="skill-item">WordPress / Blogger CMS</div>
+                <div class="skill-item">Microsoft Excel / Google Sheets</div>
+                <div class="skill-item">SEO Reporting & Analytics</div>
+                <div class="skill-item">Data-Driven Decision Making</div>
+                <div class="skill-item">Algorithm Awareness & Updates</div>
+            </div>
+        </section>
+
+        <!-- Professional Attributes -->
+        <section>
+            <h2>Professional Attributes</h2>
+            <ul>
+                <li>Strong analytical and problem-solving skills with attention to detail</li>
+                <li>Data-driven approach to digital marketing and SEO strategy</li>
+                <li>Excellent team collaboration and cross-functional communication</li>
+                <li>Continuous learning mindset with focus on industry trends and algorithm updates</li>
+                <li>Ability to translate technical SEO concepts into actionable business insights</li>
+            </ul>
+        </section>
+
+        <!-- Languages -->
+        <section>
+            <h2>Languages</h2>
+            <div class="languages-list">
+                <div class="language-item">
+                    <span class="language-name">Bengali:</span> Bilingual / C2
+                </div>
+                <div class="language-item">
+                    <span class="language-name">Hindi:</span> Upper Intermediate / B2
+                </div>
+                <div class="language-item">
+                    <span class="language-name">English:</span> Intermediate / B1
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Information -->
+        <section>
+            <h2>Additional Information</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Date of Birth:</span>
+                    <span class="detail-value">30 October 1997</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Nationality:</span>
+                    <span class="detail-value">Indian</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Marital Status:</span>
+                    <span class="detail-value">Single</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Visa Status:</span>
+                    <span class="detail-value">Full working capabilities</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
